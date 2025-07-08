@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import Header from "@/components/Header";
+import { colors } from "@/theme";
 
 export default function NovoPedido() {
 
@@ -86,8 +87,8 @@ export default function NovoPedido() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,           
-    backgroundColor: "white",
+    flex: 1,
+    backgroundColor: colors.surface,
   },
   mainContent: {
     flex: 1,            
@@ -118,18 +119,18 @@ const styles = StyleSheet.create({
     marginBottom: 15,   
   },
   orangeButton: {
-    backgroundColor: '#F27A2F', 
+    backgroundColor: colors.accent,
     padding: 12,
     borderRadius: 8,    
     marginBottom: 10,   
     alignItems: 'center', 
   },
   buttonText: {
-    color: 'white',
+    color: colors.surface,
     fontWeight: 'bold',
   },
   infoBox: {
-    backgroundColor: '#f9f9f9', 
+    backgroundColor: colors.background,
     padding: 15,
     borderRadius: 8,
   },
@@ -146,7 +147,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1, 
   },
   summaryBox: {
-    backgroundColor: '#f5f5f5',
+    backgroundColor: colors.background,
     padding: 20,
     borderRadius: 8,
     marginTop: 20,
@@ -158,7 +159,7 @@ const styles = StyleSheet.create({
   totalPrice: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#F27A2F',  
+    color: colors.accent,
     textAlign: 'center',
     marginBottom: 20,
   },

@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { FontAwesome6 } from "@expo/vector-icons";
 import { useNavigation } from "expo-router";
 import { DrawerActions } from "@react-navigation/native";
+import { colors } from "@/theme";
 
 export default function Header({ title }: { title: string }) {
   const navigation = useNavigation();
@@ -12,7 +13,7 @@ export default function Header({ title }: { title: string }) {
         style={styles.menuButton}
         onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
       >
-        <FontAwesome6 name="bars" size={20} color="#000" />
+        <FontAwesome6 name="bars" size={20} color={colors.text} />
       </TouchableOpacity>
 
       <View style={styles.titleContainer}>
@@ -24,7 +25,7 @@ export default function Header({ title }: { title: string }) {
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: "#F97A56",
+    backgroundColor: colors.primary,
     paddingVertical: 15,
     paddingHorizontal: 16,
     flexDirection: "row",
@@ -43,6 +44,6 @@ const styles = StyleSheet.create({
   titleText: {
     fontSize: 20,
     fontWeight: "bold",
-    color: "#000",
+    color: colors.text,
   },
 });
