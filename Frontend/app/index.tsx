@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { Link } from "expo-router";
 import Header from "@/components/Header";
+import { colors } from "@/theme";
 
 export default function Home() {
   return (
@@ -34,10 +35,10 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
+    backgroundColor: colors.surface,
   },
   header: {
-    backgroundColor: "#f97f20",
+    backgroundColor: colors.secondary,
     paddingVertical: 15,
     alignItems: "center",
     justifyContent: "center",
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
   headerText: {
     fontSize: 24,
     fontWeight: "bold",
-    color: "#000",
+    color: colors.text,
   },
   content: {
     flex: 0.9,
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
     marginBottom: 40,
   },
   menuItem: {
-    backgroundColor: "#F27A2F",
+    backgroundColor: colors.accent,
     paddingVertical: 25,
     paddingHorizontal: 30,
     marginBottom: 15,
@@ -70,6 +71,6 @@ const styles = StyleSheet.create({
   menuText: {
     fontSize: 16,
     fontWeight: "bold",
-    color: "white",
+    color: colors.surface,
   },
 });

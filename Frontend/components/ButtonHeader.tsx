@@ -1,4 +1,5 @@
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
+import { colors } from "@/theme";
 
 interface ButtonHeaderProps {
   buttons: (
@@ -43,7 +44,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     flexWrap: "wrap",
-    backgroundColor: "#f0f0f0",
+    backgroundColor: colors.background,
     padding: 8,
     justifyContent: "space-around",
   },
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
     height: 40,
     margin: 4,
     borderRadius: 6,
-    backgroundColor: "#e0e0e0",
+    backgroundColor: colors.gray,
     justifyContent: "center",
   },
   buttonInner: {
@@ -65,7 +66,7 @@ const styles = StyleSheet.create({
     marginRight: 6,
   },
   buttonText: {
-    color: "#333",
+    color: colors.text,
     fontWeight: "500",
   },
 });

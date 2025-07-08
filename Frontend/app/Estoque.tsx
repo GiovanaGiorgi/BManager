@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import { View, Text, StyleSheet, TouchableOpacity, Picker } from "react-native";
+import { colors } from "@/theme";
 
 export default function Estoque() {
   return (
@@ -50,7 +51,7 @@ export default function Estoque() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
+    backgroundColor: colors.surface,
   },
   mainContent: {
     flex: 1,
@@ -70,14 +71,14 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   orangeButton: {
-    backgroundColor: "#F27A2F",
+    backgroundColor: colors.accent,
     padding: 12,
     borderRadius: 8,
     marginBottom: 10,
     alignItems: "center",
   },
   buttonText: {
-    color: "white",
+    color: colors.surface,
     fontWeight: "bold",
   },
   dropdown: {

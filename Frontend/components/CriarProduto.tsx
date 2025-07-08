@@ -4,6 +4,7 @@ import { criarProduto } from "@/api";
 import FloatingLabelInput from "@/components/FloatingLabelInput";
 import { fetchCategorias } from "@/api";
 import SelectCategoria from "./SelectCategoria";
+import { colors } from "@/theme";
 
 export default function CriarProduto({
   visible,
@@ -141,7 +142,7 @@ const styles = StyleSheet.create({
   },
   modalContent: {
     justifyContent: "center",
-    backgroundColor: "white",
+    backgroundColor: colors.surface,
     margin: 20,
     padding: 20,
     borderRadius: 10,
@@ -149,7 +150,7 @@ const styles = StyleSheet.create({
     minHeight: "55%",
   },
   button: {
-    backgroundColor: "#f97f20",
+    backgroundColor: colors.secondary,
     padding: 10,
     marginBottom: 10,
   },
@@ -158,7 +159,7 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   buttonText: {
-    color: "white",
+    color: colors.surface,
     textAlign: "center",
   },
 });

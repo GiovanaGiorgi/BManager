@@ -1,4 +1,5 @@
 import { Drawer } from "expo-router/drawer";
+import { colors } from "@/theme";
 
 export default function Layout() {
   return (
@@ -6,13 +7,13 @@ export default function Layout() {
       screenOptions={{
         headerShown: false,
         drawerStyle: {
-          backgroundColor: "#f19f5e",
+          backgroundColor: colors.drawer,
           width: 280,
           paddingTop: 40,
         },
-        drawerActiveBackgroundColor: "#f97f20",
-        drawerActiveTintColor: "#fff",
-        drawerInactiveTintColor: "#fff",
+        drawerActiveBackgroundColor: colors.secondary,
+        drawerActiveTintColor: colors.surface,
+        drawerInactiveTintColor: colors.surface,
       }}
     >
       <Drawer.Screen name="index" options={{ title: "Início" }} />

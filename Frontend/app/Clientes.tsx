@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import Header from "@/components/Header";
 import ButtonHeader from "@/components/ButtonHeader";
+import { colors } from "@/theme";
 
 export default function Clientes() {
   // dados mockados
@@ -53,11 +54,11 @@ export default function Clientes() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
+    backgroundColor: colors.surface,
   },
   tableHeader: {
     flexDirection: "row",
-    backgroundColor: "#f5f5f5",
+    backgroundColor: colors.background,
     paddingVertical: 12,
     paddingHorizontal: 8,
     borderBottomWidth: 1,
